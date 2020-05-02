@@ -212,6 +212,9 @@ const artists = [
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+    let unitnine = artists[8];
+    
+    unitnine.name = 'Vincent Van Gogh';
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -222,8 +225,13 @@ const artists = [
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    /* code here */
+function getArtistByIndex(array, number) {
+
+  let newobject = array[number];
+
+  let name = newobject.name;
+
+  return `The artist at index ${number} is ${name}.`
   }
   
   /**
@@ -237,8 +245,13 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(array, number) {
+
+    let newobject = array[number];
+
+    let name = newobject.name;
+    
+    delete name; 
   }
   
   /**
@@ -246,9 +259,19 @@ function removeArtist(/*code here*/) {
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(artists, array){
 
-    /* Code here */
+    let newArray = []
+
+  for (i = 0; i < array.length; i++) {
+      let object = array[i]
+
+      if (object.paintings > 100) {
+          newArray.push(object) 
+      }
+
+  }
+      return newArray;
 
   }
 

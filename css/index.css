@@ -1,4 +1,336 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+.completecenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.centered a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  padding: 8%;
+  border-radius: 5px;
+}
+.headerimage {
+  display: flex;
+  justify-content: center;
+}
+.headerimage img {
+  width: 50%;
+}
+.headerimage img:hover {
+  opacity: 80%;
+}
+hr {
+  margin: 3%;
+}
+.artists-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.artists-container div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25%;
+  margin: 0;
+}
+.artists-container div img {
+  width: 400px;
+  padding: 2%;
+  border-radius: 20px;
+}
+.artists-container div div {
+  margin: 0%;
+  width: 90%;
+  text-align: center;
+}
+.artists-container div a {
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  margin: 1%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+header nav {
+  width: 30%;
+}
+header nav a {
+  margin: 10%;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+header nav a:hover {
+  opacity: 80%;
+}
+@media only screen and (max-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    margin: 0;
+  }
+  header nav {
+    width: 100%;
+    margin: 2%;
+  }
+  header nav a {
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .centered a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    background-color: white;
+    padding: 8%;
+    border-radius: 5px;
+  }
+  .headerimage {
+    display: flex;
+    justify-content: center;
+  }
+  .headerimage img {
+    width: 90%;
+    border-radius: 20px;
+  }
+  hr {
+    margin: 3%;
+  }
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .artists-container div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .artists-container div img {
+    width: 90%;
+    padding: 2%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .artists-container div div {
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .artists-container div a {
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin: 1%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    margin: 0;
+  }
+  header nav {
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  header nav a {
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .centered a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    background-color: white;
+    padding: 8%;
+    border-radius: 5px;
+  }
+  .headerimage {
+    display: flex;
+    justify-content: center;
+  }
+  .headerimage img {
+    width: 90%;
+    border-radius: 20px;
+  }
+  hr {
+    margin: 3%;
+  }
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .artists-container div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .artists-container div img {
+    width: 400px;
+    padding: 2%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .artists-container div div {
+    margin: 0%;
+    width: 100%;
+    text-align: center;
+  }
+  .artists-container div a {
+    text-align: center;
+    padding: 1%;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin: 1%;
+  }
+}
